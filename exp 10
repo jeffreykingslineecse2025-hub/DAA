@@ -118,3 +118,15 @@ for case, arr in test_cases.items():
         f"{r_comps:>12}"
         f"{r_time:>14.2f}"
     )
+
+
+
+
+
+
+Input Type         DQS Comps  DQS Time(ms)   RQS Comps  RQS Time(ms)
+--------------------------------------------------------------------
+Random                 69804          8.42       69434          7.20
+Sorted              12497500       1008.03       71201          4.55
+Reverse             12497500        763.88       69274          7.12
+Nearly Sorted         336668         26.95       71792         11.46
