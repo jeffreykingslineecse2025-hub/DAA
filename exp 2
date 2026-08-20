@@ -149,3 +149,33 @@ for p in patterns:
     _, c3 = rabin_karp(text_large, p)
 
     print(f'{p:>12} {c1:>10} {c2:>10} {c3:>10}')
+
+
+
+
+
+
+Text: AABAACAADAABAABA
+Pattern: AABA
+
+Naive Search
+Matches at: [0, 9, 12]
+Comparisons: 30
+
+KMP Search
+Matches at: [0, 9, 12]
+Comparisons: 18
+
+Rabin-Karp Search
+Matches at: [0, 9, 12]
+Comparisons: 12
+
+Performance Comparison
+     Pattern      Naive        KMP         RK
+--------------------------------------------------
+          AB      12487      10000       1214
+        ABCD      13260      10000        266
+      ABCDAB      13313      10012        134
+    ABCDABCD      13314      10012        147
+
+
